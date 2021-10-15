@@ -6,10 +6,7 @@
       "shopId": "shop_id1",
       "title": "Category 1",
       "createdAt": 1634229720475,
-      "products": [
-        {
-          "id": "product13"
-        },
+      "pId": [
         {
           "id": "product11111"
         },
@@ -21,24 +18,9 @@
         },
         {
           "id": "dadasdadasddd"
-        }
-      ]
-    },
-    {
-      "id": "cat2",
-      "uId": "user_id1",
-      "shopId": "shop_id1",
-      "title": "Category 2",
-      "createdAt": 1634229720475,
-      "products": [
-        {
-          "id": "product14"
         },
         {
-          "id": "product15"
-        },
-        {
-          "id": "product16"
+          "id": "dadasdadasddddd"
         }
       ]
     },
@@ -46,9 +28,9 @@
       "id": "cat3",
       "uId": "user_id1",
       "shopId": "shop_id1",
-      "title": "new titl1dasdade",
+      "title": "new titl1e",
       "createdAt": 1634229720475,
-      "products": [
+      "pId": [
         {
           "id": "product117"
         },
@@ -65,7 +47,7 @@
       "uId": "user_id1",
       "title": "Category cua qupc",
       "createdAt": 1634231519078,
-      "products": [],
+      "pId": [],
       "shopId": "shop_id1"
     },
     {
@@ -73,7 +55,7 @@
       "uId": "user_id1",
       "title": "Category cua qupc",
       "createdAt": 1634235303108,
-      "products": [],
+      "pId": [],
       "shopId": "shop_id1"
     },
     {
@@ -82,7 +64,7 @@
       "shopId": "shop_id1",
       "title": "syncc1",
       "createdAt": 1634244859783,
-      "products": [
+      "pId": [
         {
           "id": "id1"
         },
@@ -97,7 +79,7 @@
       "shopId": "shop_id1",
       "title": "syncc2",
       "createdAt": 1634244859783,
-      "products": [
+      "pId": [
         {
           "id": "id1"
         },
@@ -112,7 +94,7 @@
       "shopId": "shop_id1",
       "title": "syncc3",
       "createdAt": 1634244859783,
-      "products": [
+      "pId": [
         {
           "id": "id1"
         },
@@ -127,7 +109,7 @@
       "shopId": "shop_id1",
       "title": "syncc1",
       "createdAt": 1634244915955,
-      "products": [
+      "pId": [
         {
           "id": "id1"
         },
@@ -142,7 +124,7 @@
       "shopId": "shop_id1",
       "title": "syncc2",
       "createdAt": 1634244915955,
-      "products": [
+      "pId": [
         {
           "id": "id1"
         },
@@ -157,7 +139,7 @@
       "shopId": "shop_id1",
       "title": "syncc3",
       "createdAt": 1634244915955,
-      "products": [
+      "pId": [
         {
           "id": "id1"
         },
@@ -172,7 +154,7 @@
       "shopId": "shop_id1",
       "title": "syncc1",
       "createdAt": 1634245129267,
-      "products": [
+      "pId": [
         {
           "id": "id1"
         },
@@ -187,7 +169,7 @@
       "shopId": "shop_id1",
       "title": "syncc2",
       "createdAt": 1634245129267,
-      "products": [
+      "pId": [
         {
           "id": "id1"
         },
@@ -202,7 +184,7 @@
       "shopId": "shop_id1",
       "title": "syncc3",
       "createdAt": 1634245129267,
-      "products": [
+      "pId": [
         {
           "id": "id1"
         },
@@ -216,7 +198,7 @@
       "uId": "user_id1",
       "title": "Category cua qupc",
       "createdAt": 1634245222516,
-      "products": [],
+      "pId": [],
       "shopId": "shop_id1"
     },
     {
@@ -225,7 +207,7 @@
       "shopId": "shop_id1",
       "title": "cat1",
       "createdAt": 1634250990270,
-      "products": [
+      "pId": [
         {
           "id": "6560929775680"
         },
@@ -240,7 +222,7 @@
       "shopId": "shop_id1",
       "title": "cat2",
       "createdAt": 1634250990271,
-      "products": [
+      "pId": [
         {
           "id": "6560929775681"
         },
@@ -255,7 +237,7 @@
       "shopId": "shop_id1",
       "title": "cat1",
       "createdAt": 1634251164637,
-      "products": [
+      "pId": [
         {
           "id": "6560929775680"
         },
@@ -270,7 +252,7 @@
       "shopId": "shop_id1",
       "title": "cat2",
       "createdAt": 1634251164637,
-      "products": [
+      "pId": [
         {
           "id": "6560929775681"
         },
@@ -285,7 +267,7 @@
       "shopId": "shop_id1",
       "title": "cat1",
       "createdAt": 1634251180317,
-      "products": [
+      "pId": [
         {
           "id": "6560929775680"
         },
@@ -300,7 +282,7 @@
       "shopId": "shop_id1",
       "title": "cat2",
       "createdAt": 1634251180317,
-      "products": [
+      "pId": [
         {
           "id": "6560929775681"
         },
@@ -315,7 +297,7 @@
       "shopId": "shop_id1",
       "title": "cat1",
       "createdAt": 1634251191611,
-      "products": [
+      "pId": [
         {
           "id": "6560929775680"
         },
@@ -330,7 +312,7 @@
       "shopId": "shop_id1",
       "title": "cat2",
       "createdAt": 1634251191611,
-      "products": [
+      "pId": [
         {
           "id": "6560929775681"
         },
@@ -345,7 +327,7 @@
       "shopId": "shop_id1",
       "title": "cat1",
       "createdAt": 1634251255033,
-      "products": [
+      "pId": [
         {
           "id": "6560929775680"
         },
@@ -360,7 +342,7 @@
       "shopId": "shop_id1",
       "title": "cat2",
       "createdAt": 1634251255033,
-      "products": [
+      "pId": [
         {
           "id": "6560929775681"
         },
@@ -375,7 +357,7 @@
       "shopId": "shop_id1",
       "title": "cat1",
       "createdAt": 1634251305888,
-      "products": [
+      "pId": [
         {
           "id": "6560929775680"
         },
@@ -390,7 +372,7 @@
       "shopId": "shop_id1",
       "title": "cat2",
       "createdAt": 1634251305888,
-      "products": [
+      "pId": [
         {
           "id": "6560929775681"
         },
@@ -398,6 +380,13 @@
           "id": "6560929546305"
         }
       ]
+    },
+    {
+      "id": "ldGtQ4_JQgqBwbI7tliAk",
+      "uId": "user_id1",
+      "title": "Category cua qupc",
+      "createdAt": 1634277139860,
+      "pId": []
     }
   ]
 }

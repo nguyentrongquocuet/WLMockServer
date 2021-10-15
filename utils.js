@@ -1,3 +1,7 @@
+export function getUserId(req) {
+  return req.userId || req.params.userId || req.query.userId;
+}
+
 export class MockErr extends Error {
   status = 400;
   constructor(status = 400, message = '') {
@@ -22,9 +26,9 @@ export function getCats(db) {
 }
 
 export function getCatSummary(cat) {
-  const productCount = cat.products.length;
+  const productCount = cat.pId.length;
   return {
-    ...exclude(cat, ['products']),
+    ...exclude(cat, ['pId']),
     pCount: productCount,
   }
 }
@@ -44,7 +48,6 @@ export function getOneCatById(db, catId) {
 export function isInvalidCat(cat) {
   if (!cat) return 'Cat is undefined';
   if (!cat.id) return 'Cat must contain id';
-  if (!cat.shopId) return 'Cat must contain shopId';
   return false;
 }
 
@@ -98,23 +101,23 @@ export function getAllUserProducts(db, userId){
   const products = new Map();
   const cats = getCatsByUserId(db, userId);
   cats.forEach(cat => {
-   cat.products.forEach(product => products.set(product.id, product));
+   cat.pId.forEach(productId => products.set(productId, productId));
   });
   return Array.from(products.values());
 }
 
 export function getCatProducts(db, catId){
   const foundCat = getOneCatById(db, catId);
-  if (foundCat) return foundCat.products;
+  if (foundCat) return foundCat.pId;
 }
 
 export function addProduct(db,userId, catId, productId) {
   if (!userId || !productId || !catId) return false;
   const foundCat = getOneCatById(db, catId);
   if (!foundCat || foundCat.uId !== userId) return false;
-  const foundProductIndex = foundCat.products.findIndex((product) => product.id === productId);
+  const foundProductIndex = foundCat.pId.findIndex((product) => product.id === productId);
   if (foundProductIndex === -1) {
-    foundCat.products.push({
+    foundCat.pId.push({
       id: productId,
     });
     db.write();
@@ -131,9 +134,9 @@ export function deleteProduct(db, userId, catId, productId) {
     if (!userId || !productId || !catId) return false;
     const foundCat = getOneCatById(db, catId);
     if (!foundCat || foundCat.uId !== userId) return false;
-    const pIndex = foundCat.products.findIndex(product => product.id  === productId);
+    const pIndex = foundCat.pId.findIndex(product => product.id  === productId);
     if (pIndex === -1) return false;
-    foundCat.products.splice(pIndex, 1);
+    foundCat.pId.splice(pIndex, 1);
     db.write();
     return {
       id: productId,

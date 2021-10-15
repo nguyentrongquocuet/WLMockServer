@@ -1,7 +1,19 @@
 import { Router } from "express";
-import { addProductToCatController, createCatController, deleteCatController, deleteProductController, editCatController, getAllCategoriesController, getAllUserProductsController, getCatByIdController, getCatProductsController, getSettingsController, synchronizeCategoriesController } from './controller.js';
+import { addProductToCatController, createCatController, createCategoriesController, deleteCatController, deleteProductController, editCatController, getAllCategoriesController, getAllUserProductsController, getCatByIdController, getCatProductsController, getSettingsController } from './controller.js';
+import {getUserId, MockErr} from "./utils.js";
 
 const mainRoute = Router();
+
+
+function userIdMiddleware(req, _, next) {
+  if (!getUserId(req)) return next(new MockErr(401, 'missing userid'));
+  return next();
+}
+
+function catIdMiddleWare(req, _, next) {
+  if (!req.body.catId) return next(new MockErr(401, 'missing catId'));
+  return next();
+}
 
 mainRoute.use((req, res, next) => {
   const { headers } = req;
@@ -12,25 +24,21 @@ mainRoute.use((req, res, next) => {
   next();
 })
 
-mainRoute.get('/categories/:userId', getAllCategoriesController);
+mainRoute.use(userIdMiddleware);
 
-mainRoute.post('/categories/:userId', synchronizeCategoriesController);
+mainRoute.post('/categories/get', getAllCategoriesController);
 
-mainRoute.get('/category/:catId', getCatByIdController);
+mainRoute.post('/categories', createCategoriesController);
 
-mainRoute.post('/category/:userId', createCatController);
+mainRoute.post('/category', createCatController);
 
-mainRoute.put('/category/:catId', editCatController);
+mainRoute.post('/category/edit', catIdMiddleWare, editCatController);
 
-mainRoute.delete('/category/:catId', deleteCatController);
+mainRoute.post('/category/delete', catIdMiddleWare, deleteCatController);
 
-mainRoute.get('/products/category/:catId', getCatProductsController);
+mainRoute.post('/product/add', catIdMiddleWare, addProductToCatController);
 
-mainRoute.get('/products/:userId', getAllUserProductsController);
-
-mainRoute.post('/products/:userId', addProductToCatController);
-
-mainRoute.delete('/products/:productId', deleteProductController);
+mainRoute.post('/product/delete', catIdMiddleWare, deleteProductController);
 
 mainRoute.get('/settings', getSettingsController);
 
