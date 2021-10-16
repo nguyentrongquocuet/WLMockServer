@@ -63,12 +63,13 @@ export function createCategoriesController(req, res, next) {
     console.log(body, categories);
     if (!categories) throw new MockErr(400, 'check categories');
     const cats = categories.map((rawCat) => {
+      if (!rawCat.pIds) throw new MockErr(404, 'please send cate with pIds as an array');
       return {
         id: nanoid(),
         uId: userId,
         title: rawCat.title,
         createdAt: Date.now(),
-        pIds: rawCat.pIds,
+        pIds: rawCat.pIds || [],
       }
     })
     const added = addCategories(db, cats);

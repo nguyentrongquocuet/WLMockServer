@@ -120,8 +120,7 @@ export function addProducts(db,userId, catId, productIds) {
     foundCat.pIds.push([...productIds]);
     db.write();
     return {
-      pIds: productIds,
-      catId: catId,
+      pIds: productIds, catId: catId,
     }
   }
   return false;
