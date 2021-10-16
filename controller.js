@@ -1,6 +1,6 @@
 import { nanoid } from 'nanoid';
 import {settings} from './settings.js';
-import {addCategories, addCategory, addProduct, deleteCategory, deleteProduct, editCategory, getAllUserProducts, getCatProducts, getCatsByUserId, getCatsSummaryByUserId, getCatSummary, getOneCatById, getUserId, MockErr} from './utils.js';
+import {addCategories, addCategory, addProducts, deleteCategory, deleteProduct, editCategory, getAllUserProducts, getCatProducts, getCatsByUserId, getCatsSummaryByUserId, getCatSummary, getOneCatById, getUserId, MockErr} from './utils.js';
 
 /**
  * Get all categories of an user
@@ -8,7 +8,10 @@ import {addCategories, addCategory, addProduct, deleteCategory, deleteProduct, e
 export function getAllCategoriesController(req, res, next) {
   const userId = getUserId(req);
   const db = req.app.db;
-  return res.status(200).json(getCatsByUserId(db, userId));
+  const cats = getCatsByUserId(db, userId);
+  return res.status(200).json({
+    categories: cats,
+  });
 }
 
 /**
@@ -41,7 +44,7 @@ export function createCatController(req, res, next) {
       uId: userId,
       title,
       createdAt: Date.now(),
-      pId:[],
+      pIds:[],
     }
     return res.status(201).json(addCategory(db, cat));
   } 
@@ -65,7 +68,7 @@ export function createCategoriesController(req, res, next) {
         uId: userId,
         title: rawCat.title,
         createdAt: Date.now(),
-        pId: rawCat.pId,
+        pIds: rawCat.pIds,
       }
     })
     const added = addCategories(db, cats);
@@ -138,8 +141,8 @@ export function addProductToCatController(req, res, next) {
   try {
     const userId = getUserId(req);
     const db = req.app.db;
-    const { body: { catId, pId } } = req;
-    const added = addProduct(db, userId, catId, pId)
+    const { body: { catId, pIds } } = req;
+    const added = addProducts(db, userId, catId, pIds)
     if (added) return res.status(201).json(added);
     throw new MockErr(404, 'Cannot add product, check userId, catId, productId');
   } 

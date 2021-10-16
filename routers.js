@@ -28,17 +28,17 @@ mainRoute.use(userIdMiddleware);
 
 mainRoute.post('/categories/get', getAllCategoriesController);
 
-mainRoute.post('/categories', createCategoriesController);
+mainRoute.post('/category', createCategoriesController);
 
-mainRoute.post('/category', createCatController);
+//mainRoute.post('/category', createCatController);
 
-mainRoute.post('/category/edit', catIdMiddleWare, editCatController);
+mainRoute.post('/category/update', catIdMiddleWare, editCatController);
 
 mainRoute.post('/category/delete', catIdMiddleWare, deleteCatController);
 
 mainRoute.post('/product/add', catIdMiddleWare, addProductToCatController);
 
-mainRoute.post('/product/delete', catIdMiddleWare, deleteProductController);
+mainRoute.post('/product/delete',  deleteProductController);
 
 mainRoute.get('/settings', getSettingsController);
 
