@@ -1,2 +1,2 @@
 # WLMockserver
-npm run serve
+node ./index.js
