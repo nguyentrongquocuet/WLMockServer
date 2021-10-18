@@ -26,9 +26,9 @@ mainRoute.use((req, res, next) => {
 
 mainRoute.use(userIdMiddleware);
 
-mainRoute.post('/categories/get', getAllCategoriesController);
+mainRoute.post('/categories', getAllCategoriesController);
 
-mainRoute.post('/category', createCategoriesController);
+mainRoute.post('/category/add', createCategoriesController);
 
 //mainRoute.post('/category', createCatController);
 
