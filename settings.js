@@ -28,6 +28,7 @@ export const settings = {
       position: 'top',
     },
     maxItemAnonymous: 3,
+    multiCategory: true,
   },
   wishlistPage: {
     buyNow: {

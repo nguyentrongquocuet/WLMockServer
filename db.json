@@ -1,42 +1,25 @@
 {
   "categories": [
     {
-      "id": "cat1",
-      "uId": "user_id1",
-      "shopId": "shop_id1",
-      "title": "Category 1",
-      "createdAt": 1634229720475,
-      "pIds": ["product11112", "dadasdadasddd"]
-    },
-    {
       "id": "cat3",
       "uId": "user_id1",
       "shopId": "shop_id1",
       "title": "new titl1e",
       "createdAt": 1634229720475,
-      "pIds": ["product117", "product18"]
+      "pIds": [
+        "6560929546306"
+      ]
     },
     {
-      "id": "GTMclRonzDj-4xl71piwz",
+      "id": "GTMclRonzDj-4xl71piasd",
       "uId": "user_id1",
       "title": "Category 1",
       "createdAt": 1634352079899,
-      "pIds": ["product11112", "dadasdadasddd"]
-    },
-    {
-      "id": "CnEL_PFW2oeG50rKSM8Ii",
-      "uId": "user_id1",
-      "title": "new titl1e",
-      "createdAt": 1634352079899,
-      "pIds": ["product117"]
-    },
-    {
-      "id": "6M3F9tf6IIXjSH1IC2jYZ",
-      "uId": "user_id1",
-      "title": "Category cua qupc",
-      "createdAt": 1634389365948,
-      "pIds": ["newproduct1", "newproduct2"]
+      "pIds": [
+        "6560929546306",
+        "6560929546308",
+        "6560929546309"
+      ]
     }
   ]
 }
-
