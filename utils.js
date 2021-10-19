@@ -117,7 +117,7 @@ export function addProducts(db,userId, catId, productIds) {
   if (!foundCat || foundCat.uId !== userId) return false;
   const foundProductIndex = foundCat.pIds.findIndex((productId) => productIds.includes(productId));
   if (foundProductIndex === -1) {
-    foundCat.pIds.push([...productIds]);
+    foundCat.pIds.push(...productIds);
     db.write();
     return {
       pIds: productIds, catId: catId,

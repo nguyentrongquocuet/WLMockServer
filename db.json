@@ -6,20 +6,29 @@
       "shopId": "shop_id1",
       "title": "new titl1e",
       "createdAt": 1634229720475,
-      "pIds": [
-        "6560929546306"
-      ]
+      "pIds": ["cream-sofa"]
     },
     {
       "id": "GTMclRonzDj-4xl71piasd",
       "uId": "user_id1",
       "title": "Category 1",
       "createdAt": 1634352079899,
-      "pIds": [
-        "6560929546306",
-        "6560929546308",
-        "6560929546309"
-      ]
+      "pIds": ["antique-drawers", "black-bean-bag", "clay-plant-pot"]
+    },
+    {
+      "id": "rCxCJE5b2DyxIrh8129Nk",
+      "uId": "user_id1",
+      "title": "đâsđá",
+      "createdAt": 1634641492608,
+      "pIds": ["bedside-table"]
+    },
+    {
+      "id": "pDxvy90JcDa8rLWwm3zHw",
+      "uId": "user_id1",
+      "title": "xsadasdsad",
+      "createdAt": 1634641779066,
+      "pIds": ["biodegradable-cardboard-pots"]
     }
   ]
 }
+
