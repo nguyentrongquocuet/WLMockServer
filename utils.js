@@ -1,9 +1,9 @@
 import { readFileSync } from 'fs';
 
-function remapProduct(shopifyProduct) {
+function remapProduct(shopifyProduct, id) {
   return {
     ...shopifyProduct,
-    pId: `${shopifyProduct.id}`,
+    pId: `${id}`,
     productType: 'unknown',
     images: (shopifyProduct.images || []).map((src) => ({ originalSrc: src })),
     featuredImage: { originalSrc: shopifyProduct.featured_image },
@@ -17,7 +17,7 @@ function readProductJson(pId) {
   const url = './products/' + pId + '.json';
   try {
     const content = readFileSync(url, { encoding: 'utf-8' });
-    return remapProduct(JSON.parse(content));
+    return remapProduct(JSON.parse(content), pId);
   } catch {
     return {};
   }
