@@ -5,7 +5,7 @@ import {addCategories, addCategory, addProducts, deleteCategory, deleteProduct, 
 /**
  * Get all categories of an user
  */
-export function getAllCategoriesController(req, res, next) {
+export function getUserWishlist(req, res, next) {
   const userId = getUserId(req);
   const db = req.app.db;
   const cats = getCatsByUserId(db, userId);
@@ -73,7 +73,7 @@ export function createCategoriesController(req, res, next) {
       }
     })
     const added = addCategories(db, cats);
-    if (added) return res.status(201).json(added);
+    if (added) return res.status(201).json({ categories: added });
     throw new MockErr(400, 'check your request');
   } catch (e) {
     return next(e);

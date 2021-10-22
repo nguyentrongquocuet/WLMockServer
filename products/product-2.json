@@ -1,0 +1,220 @@
+{
+  "id": 6560929775686,
+  "title": "Cold Brew",
+  "handle": "cold-brew",
+  "description": "\u003cmeta charset=\"UTF-8\"\u003e\n\u003ch3\u003eWAT IS HET?1\u003c/h3\u003e\n\u003cp\u003e12 flesjes Cold Brew Coffee\u003cbr\u003e\u003c/p\u003e\n\u003ch3\u003eWAAROM DIT PRODUCT?\u00a0\u003c/h3\u003e\n\u003cp\u003eIjskoffie in de supermarkt bestaat voornamelijk uit melk + de koffiesmaak wordt vaak uit aroma's gehaald. Onze ijskoffie haalt de koffiesmaak uit koffiebonen en er wordt geen melk of suiker aan toegevoegd. Je kan hem 'on the rocks' drinken, maar is ook erg lekker met met (plantaardige) melk.\u00a0\u003c/p\u003e\n\u003ch3\u003eGOED OM TE WETEN\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e158 mg per 250 ml\u003c/li\u003e\n\u003cli\u003e8 kcal per flesje\u003c/li\u003e\n\u003cli\u003egoed voor 2 ijskoffies\u003c/li\u003e\n\u003c/ul\u003e",
+  "published_at": "2021-06-14T04:43:31-04:00",
+  "created_at": "2021-06-14T04:43:37-04:00",
+  "vendor": "UpfrontFood",
+  "type": "",
+  "tags": [],
+  "price": 300,
+  "price_min": 300,
+  "price_max": 6650,
+  "available": true,
+  "price_varies": true,
+  "compare_at_price": null,
+  "compare_at_price_min": 0,
+  "compare_at_price_max": 0,
+  "compare_at_price_varies": false,
+  "variants": [
+    {
+      "id": 39307715313728,
+      "title": "Aantal aaa",
+      "option1": "Aantal aaa",
+      "option2": null,
+      "option3": null,
+      "sku": null,
+      "requires_shipping": true,
+      "taxable": false,
+      "featured_image": null,
+      "available": true,
+      "name": "Cold Brew - Aantal aaa",
+      "public_title": "Aantal aaa",
+      "options": ["Aantal aaa"],
+      "price": 300,
+      "weight": 0,
+      "compare_at_price": null,
+      "inventory_management": null,
+      "barcode": null
+    },
+    {
+      "id": 39307715346496,
+      "title": "CB 1",
+      "option1": "CB 1",
+      "option2": null,
+      "option3": null,
+      "sku": "CBC1",
+      "requires_shipping": true,
+      "taxable": false,
+      "featured_image": null,
+      "available": true,
+      "name": "Cold Brew - CB 1",
+      "public_title": "CB 1",
+      "options": ["CB 1"],
+      "price": 500,
+      "weight": 2500,
+      "compare_at_price": null,
+      "inventory_management": null,
+      "barcode": null
+    },
+    {
+      "id": 39307715379264,
+      "title": "CB 12",
+      "option1": "CB 12",
+      "option2": null,
+      "option3": null,
+      "sku": "CBC12",
+      "requires_shipping": true,
+      "taxable": false,
+      "featured_image": null,
+      "available": true,
+      "name": "Cold Brew - CB 12",
+      "public_title": "CB 12",
+      "options": ["CB 12"],
+      "price": 2400,
+      "weight": 2500,
+      "compare_at_price": null,
+      "inventory_management": null,
+      "barcode": null
+    },
+    {
+      "id": 39307715412032,
+      "title": "CB 24",
+      "option1": "CB 24",
+      "option2": null,
+      "option3": null,
+      "sku": "CBC24",
+      "requires_shipping": true,
+      "taxable": false,
+      "featured_image": null,
+      "available": true,
+      "name": "Cold Brew - CB 24",
+      "public_title": "CB 24",
+      "options": ["CB 24"],
+      "price": 4600,
+      "weight": 2500,
+      "compare_at_price": null,
+      "inventory_management": null,
+      "barcode": null
+    },
+    {
+      "id": 39307715444800,
+      "title": "CB 36",
+      "option1": "CB 36",
+      "option2": null,
+      "option3": null,
+      "sku": "CBC36",
+      "requires_shipping": true,
+      "taxable": false,
+      "featured_image": null,
+      "available": true,
+      "name": "Cold Brew - CB 36",
+      "public_title": "CB 36",
+      "options": ["CB 36"],
+      "price": 6650,
+      "weight": 2500,
+      "compare_at_price": null,
+      "inventory_management": null,
+      "barcode": null
+    }
+  ],
+  "images": [
+    "//cdn.shopify.com/s/files/1/0270/5581/6768/products/coffee.jpg?v=1623660217",
+    "//cdn.shopify.com/s/files/1/0270/5581/6768/products/coffee-pack.png?v=1623660217",
+    "//cdn.shopify.com/s/files/1/0270/5581/6768/products/image_53.png?v=1623660217",
+    "//cdn.shopify.com/s/files/1/0270/5581/6768/products/CB30.jpg?v=1623660217",
+    "//cdn.shopify.com/s/files/1/0270/5581/6768/products/CB30new.jpg?v=1623660217"
+  ],
+  "featured_image": "//cdn.shopify.com/s/files/1/0270/5581/6768/products/coffee.jpg?v=1623660217",
+  "options": [
+    {
+      "name": "Aantal",
+      "position": 1,
+      "values": ["Aantal aaa", "CB 1", "CB 12", "CB 24", "CB 36"]
+    }
+  ],
+  "url": "/products/cold-brew",
+  "media": [
+    {
+      "alt": null,
+      "id": 20369660903488,
+      "position": 1,
+      "preview_image": {
+        "aspect_ratio": 0.8,
+        "height": 2500,
+        "width": 1999,
+        "src": "https://cdn.shopify.com/s/files/1/0270/5581/6768/products/coffee.jpg?v=1623660217"
+      },
+      "aspect_ratio": 0.8,
+      "height": 2500,
+      "media_type": "image",
+      "src": "https://cdn.shopify.com/s/files/1/0270/5581/6768/products/coffee.jpg?v=1623660217",
+      "width": 1999
+    },
+    {
+      "alt": null,
+      "id": 20369660936256,
+      "position": 2,
+      "preview_image": {
+        "aspect_ratio": 0.8,
+        "height": 2000,
+        "width": 1600,
+        "src": "https://cdn.shopify.com/s/files/1/0270/5581/6768/products/coffee-pack.png?v=1623660217"
+      },
+      "aspect_ratio": 0.8,
+      "height": 2000,
+      "media_type": "image",
+      "src": "https://cdn.shopify.com/s/files/1/0270/5581/6768/products/coffee-pack.png?v=1623660217",
+      "width": 1600
+    },
+    {
+      "alt": null,
+      "id": 20369660969024,
+      "position": 3,
+      "preview_image": {
+        "aspect_ratio": 0.804,
+        "height": 952,
+        "width": 765,
+        "src": "https://cdn.shopify.com/s/files/1/0270/5581/6768/products/image_53.png?v=1623660217"
+      },
+      "aspect_ratio": 0.804,
+      "height": 952,
+      "media_type": "image",
+      "src": "https://cdn.shopify.com/s/files/1/0270/5581/6768/products/image_53.png?v=1623660217",
+      "width": 765
+    },
+    {
+      "alt": null,
+      "id": 20369661001792,
+      "position": 4,
+      "preview_image": {
+        "aspect_ratio": 0.8,
+        "height": 1350,
+        "width": 1080,
+        "src": "https://cdn.shopify.com/s/files/1/0270/5581/6768/products/CB30.jpg?v=1623660217"
+      },
+      "aspect_ratio": 0.8,
+      "height": 1350,
+      "media_type": "image",
+      "src": "https://cdn.shopify.com/s/files/1/0270/5581/6768/products/CB30.jpg?v=1623660217",
+      "width": 1080
+    },
+    {
+      "alt": null,
+      "id": 20369661034560,
+      "position": 5,
+      "preview_image": {
+        "aspect_ratio": 0.8,
+        "height": 1350,
+        "width": 1080,
+        "src": "https://cdn.shopify.com/s/files/1/0270/5581/6768/products/CB30new.jpg?v=1623660217"
+      },
+      "aspect_ratio": 0.8,
+      "height": 1350,
+      "media_type": "image",
+      "src": "https://cdn.shopify.com/s/files/1/0270/5581/6768/products/CB30new.jpg?v=1623660217",
+      "width": 1080
+    }
+  ]
+}

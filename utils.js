@@ -1,3 +1,35 @@
+import { readFileSync } from 'fs';
+
+function remapProduct(shopifyProduct) {
+  return {
+    ...shopifyProduct,
+    pId: `${shopifyProduct.id}`,
+    productType: 'unknown',
+    images: (shopifyProduct.images || []).map((src) => ({ originalSrc: src })),
+    featuredImage: { originalSrc: shopifyProduct.featured_image },
+    variants: (shopifyProduct.variants || []).map((variant) => ({ id: variant.id, title: variant.title, price: variant.price })),
+    vendor: 'dumb',
+    wishlistAdded: 'chiu',
+  };
+}
+
+function readProductJson(pId) {
+  const url = './products/' + pId + '.json';
+  try {
+    const content = readFileSync(url, { encoding: 'utf-8' });
+    return remapProduct(JSON.parse(content));
+  } catch {
+    return {};
+  }
+}
+
+function parseCat(cat) {
+  return {
+    ...cat,
+    products: cat.pIds.map(readProductJson),
+  }
+}
+
 export function getUserId(req) {
   return req.userId || req.params.userId || req.query.userId;
 }
@@ -34,7 +66,7 @@ export function getCatSummary(cat) {
 }
 
 export function getCatsByUserId(db, userId) {
-  return getCats(db).filter(cat => cat.uId === userId)
+  return getCats(db).filter(cat => cat.uId === userId).map(parseCat);
 }
 
 export function getCatsSummaryByUserId(db, userId) {

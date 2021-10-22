@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { addProductToCatController, createCatController, createCategoriesController, deleteCatController, deleteProductController, editCatController, getAllCategoriesController, getAllUserProductsController, getCatByIdController, getCatProductsController, getSettingsController } from './controller.js';
+import { addProductToCatController, createCategoriesController, deleteCatController, deleteProductController, editCatController, getSettingsController, getUserWishlist } from './controller.js';
 import {getUserId, MockErr} from "./utils.js";
 
 const mainRoute = Router();
@@ -26,7 +26,7 @@ mainRoute.use((req, res, next) => {
 
 mainRoute.use(userIdMiddleware);
 
-mainRoute.post('/categories', getAllCategoriesController);
+mainRoute.post('/categories', getUserWishlist);
 
 mainRoute.post('/category/add', createCategoriesController);
 

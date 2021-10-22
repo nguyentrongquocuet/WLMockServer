@@ -1,0 +1,40 @@
+{
+  "categories": [
+    {
+      "id": "cat3",
+      "uId": "user_id1",
+      "shopId": "shop_id1",
+      "title": "new titl1e",
+      "createdAt": 1634229720475,
+      "pIds": ["product-1", "product-2", "product-3"]
+    },
+    {
+      "id": "GTMclRonzDj-4xl71piasd",
+      "uId": "user_id1",
+      "title": "Category 1 dasda",
+      "createdAt": 1634352079899,
+      "pIds": ["product-4", "product-5", "product-6"]
+    },
+    {
+      "id": "rCxCJE5b2DyxIrh8129Nk",
+      "uId": "user_id1",
+      "title": "đâsđá",
+      "createdAt": 1634641492608,
+      "pIds": ["product-8", "product-11"]
+    },
+    {
+      "id": "pDxvy90JcDa8rLWwm3zHw",
+      "uId": "user_id1",
+      "title": "xsadasdsad",
+      "createdAt": 1634641779066,
+      "pIds": ["product-9", "product-7", "product-12"]
+    },
+    {
+      "id": "c3iI3gEEfpIyMO64u-S16",
+      "uId": "user_id1",
+      "title": "hello quoc",
+      "createdAt": 1634698107779,
+      "pIds": []
+    }
+  ]
+}
